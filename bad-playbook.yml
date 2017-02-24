@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+
+  tasks:
+    - include_role:
+        name: testrole
+    - debug: msg="{{some_var}}"
